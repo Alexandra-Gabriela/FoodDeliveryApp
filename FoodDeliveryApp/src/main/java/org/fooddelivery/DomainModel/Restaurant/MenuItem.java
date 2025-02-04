@@ -12,6 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MenuItem {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long itemId;
     private String name;

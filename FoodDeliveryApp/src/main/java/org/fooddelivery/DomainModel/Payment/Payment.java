@@ -5,6 +5,7 @@ import org.fooddelivery.DomainModel.Order.Order;
 import org.fooddelivery.DomainModel.Users.Client;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -18,7 +19,8 @@ public class Payment {
     private String paymentMethod;
     private Double amount;
     private Double tipAmount;
-    private String status;
+    private PaymentStatus status;
+    private Date createdAt;
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
     private Order order;
