@@ -4,6 +4,7 @@ import lombok.*;
 import org.fooddelivery.DomainModel.Order.Order;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
 @Data
@@ -14,7 +15,7 @@ public class PromotionHistory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer promoHistoryId;
     private BigDecimal appliedDiscount;
-    private Data appliedAt;
+    private Date appliedAt;
 
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
