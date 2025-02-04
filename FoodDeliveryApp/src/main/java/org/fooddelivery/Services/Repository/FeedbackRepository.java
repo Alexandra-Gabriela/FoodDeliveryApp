@@ -1,4 +1,4 @@
-package org.fooddelivery.Servicii.Repository;
+package org.fooddelivery.Services.Repository;
 
 import org.fooddelivery.DomainModel.Order.Feedback;
 import org.springframework.data.jpa.repository.JpaRepository;

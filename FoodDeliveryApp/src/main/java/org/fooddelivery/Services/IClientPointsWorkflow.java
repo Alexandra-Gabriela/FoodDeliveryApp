@@ -1,4 +1,4 @@
-package org.fooddelivery.Servicii;
+package org.fooddelivery.Services;
 
 import org.fooddelivery.DomainModel.Users.TransactionType;
 

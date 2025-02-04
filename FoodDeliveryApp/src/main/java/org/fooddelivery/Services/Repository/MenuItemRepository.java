@@ -1,4 +1,4 @@
-package org.fooddelivery.Servicii.Repository;
+package org.fooddelivery.Services.Repository;
 
 import org.fooddelivery.DomainModel.Restaurant.MenuItem;
 import org.fooddelivery.DomainModel.Restaurant.PopularMenuItems;

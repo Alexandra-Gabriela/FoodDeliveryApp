@@ -1,10 +1,10 @@
-package org.fooddelivery.Servicii.Implementari;
+package org.fooddelivery.Services.Implements;
 
 import org.fooddelivery.DomainModel.Users.Client;
 import org.fooddelivery.DomainModel.Users.ClientPointsHistory;
 import org.fooddelivery.DomainModel.Users.TransactionType;
-import org.fooddelivery.Servicii.IClientPointsWorkflow;
-import org.fooddelivery.Servicii.Repository.ClientRepository;
+import org.fooddelivery.Services.IClientPointsWorkflow;
+import org.fooddelivery.Services.Repository.ClientRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

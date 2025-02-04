@@ -1,14 +1,14 @@
-package org.fooddelivery.Servicii.Implementari;
+package org.fooddelivery.Services.Implements;
 
 import org.fooddelivery.DomainModel.Order.Order;
 import org.fooddelivery.DomainModel.Payment.Payment;
 import org.fooddelivery.DomainModel.Payment.PaymentHistory;
 import org.fooddelivery.DomainModel.Payment.PaymentStatus;
 import org.fooddelivery.DomainModel.Users.Client;
-import org.fooddelivery.Servicii.IPaymentService;
-import org.fooddelivery.Servicii.Repository.ClientRepository;
-import org.fooddelivery.Servicii.Repository.OrderRepository;
-import org.fooddelivery.Servicii.Repository.PaymentRepository;
+import org.fooddelivery.Services.IPaymentService;
+import org.fooddelivery.Services.Repository.ClientRepository;
+import org.fooddelivery.Services.Repository.OrderRepository;
+import org.fooddelivery.Services.Repository.PaymentRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
