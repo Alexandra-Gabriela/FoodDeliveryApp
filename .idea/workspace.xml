@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f5f944-1008-4630-99ba-97d04d4425fe" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/IPaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Implementari/ClientPointWorkflowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Implementari/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Repository/ClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Repository/MenuItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Repository/RestaurantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Repository/UserRepository.java" afterDir="false" />
+    <list default="true" id="01f5f944-1008-4630-99ba-97d04d4425fe" name="Changes" comment="Business Services">
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/IMenuItemWorkflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/IOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/IRestaurantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/MenuItemWorkflowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/RestaurantService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Payment/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Restaurant/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Restaurant/MenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/IClientPointsWorkflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/IClientPointsWorkflow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Repository/PromotionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Servicii/Repository/PromotionRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738664141175</updated>
       <workItem from="1738664142258" duration="1755000" />
-      <workItem from="1738678076851" duration="3957000" />
+      <workItem from="1738678076851" duration="7853000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -97,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738664243585</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Business Services">
+      <option name="closed" value="true" />
+      <created>1738682076840</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738682076840</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Business Services">
+      <option name="closed" value="true" />
+      <created>1738682222436</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738682222436</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Business Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Business Services" />
   </component>
 </project>

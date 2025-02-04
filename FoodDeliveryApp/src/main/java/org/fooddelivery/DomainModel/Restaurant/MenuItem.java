@@ -21,6 +21,7 @@ public class MenuItem {
     private Boolean available;
     private String category;
     private Integer orderCount;
+    private int stock;
 
     @ManyToOne
     @JoinColumn(name = "restaurant_id", nullable = false)

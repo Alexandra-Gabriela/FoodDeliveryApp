@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-public interface RestaurantRepository extends JpaRepository<Restaurant, Integer> {
+public interface RestaurantRepository extends JpaRepository<Restaurant, Long> {
     List<Restaurant> findByCategory(String category);
 
     @Query("SELECT r FROM Restaurant r WHERE r.rating >= :minRating")
