@@ -23,7 +23,7 @@ public class RestaurantService implements IRestaurantService {
         this.menuItemRepository = menuItemRepository;
     }
 
-    // CRUD Restaurante
+
     @Override
     public Restaurant addRestaurant(Restaurant restaurant) {
         return restaurantRepository.save(restaurant);
@@ -51,7 +51,6 @@ public class RestaurantService implements IRestaurantService {
         return null;
     }
 
-    // Gestionare Meniu
     @Override
     public MenuItem addMenuItemToRestaurant(Long restaurantId, MenuItem menuItem, Integer stock) {
         Optional<Restaurant> restaurant = restaurantRepository.findById(restaurantId.longValue());
@@ -110,7 +109,7 @@ public class RestaurantService implements IRestaurantService {
         return false;
     }
 
-    // Căutare Restaurante
+
     @Override
     public List<Restaurant> getRestaurantsByCategory(String category) {
         return restaurantRepository.findByCategory(category);
@@ -128,10 +127,10 @@ public class RestaurantService implements IRestaurantService {
 
     @Override
     public List<Restaurant> searchRestaurants(String category, Double minRating, Integer minOrders, Double maxPrice) {
-        return restaurantRepository.findAll(); // Exemplu, trebuie implementată filtrarea
+        return restaurantRepository.findAll();
     }
 
-    // Restaurante Populare
+
     @Override
     public List<PopularRestaurants> getPopularRestaurantsBetweenDates(Date startDate, Date endDate) {
         return restaurantRepository.findPopularRestaurantsBetweenDates(startDate, endDate);
@@ -144,16 +143,16 @@ public class RestaurantService implements IRestaurantService {
 
     @Override
     public List<PopularRestaurants> getPopularRestaurantsByPeriod(String period) {
-        return restaurantRepository.findCurrentTopRestaurants(); // Trebuie implementată logica pentru diferite perioade
+        return restaurantRepository.findCurrentTopRestaurants();
     }
 
-    // Recomandări Personalizate
+
     @Override
     public List<Restaurant> recommendRestaurantsForClient(Long clientId, int limit) {
-        return restaurantRepository.findAll(); // Exemplu, trebuie personalizată logica de recomandare
+        return restaurantRepository.findAll();
     }
 
-    // Gestionare Meniu
+
     @Override
     public List<MenuItem> getAvailableMenuItemsByRestaurant(Long restaurantId) {
         return menuItemRepository.findAvailableMenuItemsByRestaurant(restaurantId);

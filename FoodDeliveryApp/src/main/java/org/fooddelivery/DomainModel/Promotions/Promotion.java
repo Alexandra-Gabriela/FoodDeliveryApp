@@ -19,8 +19,11 @@ public class Promotion {
     private String description;
     private Date expiryDate;
     private Date createdAt;
-    private String promoType;
+    private RuleType promoType;
     private Double discountPercentage;
+    @Column(nullable = false)
+    private Boolean isActive = true;
+
 
     @OneToMany(mappedBy = "promotion", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Order> orders = new ArrayList<>();
@@ -33,6 +36,14 @@ public class Promotion {
 
     @OneToMany(mappedBy = "promotion", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ClientPromotionHistory> clientPromotionHistories = new ArrayList<>();
+
+    @PrePersist
+    protected void onCreate() {
+        this.createdAt = new Date();
+    }
+    public boolean isExpired() {
+        return expiryDate != null && expiryDate.before(new Date());
+    }
 
 
 }
