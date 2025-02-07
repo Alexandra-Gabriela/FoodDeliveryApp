@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 import org.fooddelivery.DomainModel.Order.Feedback;
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 import org.fooddelivery.DomainModel.Payment.Payment;
 
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class Client {
     private Integer loyaltyPoints;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Order> orders = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Payment> payments = new ArrayList<>();
@@ -32,7 +32,7 @@ public class Client {
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private Users user;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ClientPointsHistory> pointsHistory = new ArrayList<>();

@@ -1,7 +1,7 @@
 package org.fooddelivery.DomainModel.Payment;
 import jakarta.persistence.*;
 import lombok.*;
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 import org.fooddelivery.DomainModel.Users.Client;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ public class Payment {
     private Date createdAt;
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
-    private Order order;
+    private Orders order;
 
     @ManyToOne
     @JoinColumn(name = "client_id", nullable = false)

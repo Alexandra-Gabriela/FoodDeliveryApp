@@ -17,5 +17,5 @@ public class OrderCancellationHistory {
     private String cancelledBy;
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
-    private Order order;
+    private Orders order;
 }

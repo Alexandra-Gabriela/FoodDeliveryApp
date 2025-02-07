@@ -4,9 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f5f944-1008-4630-99ba-97d04d4425fe" name="Changes" comment="DTO Classes">
-      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/RESTServices/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Resources/application/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Resources/application.properties" afterDir="false" />
+    <list default="true" id="01f5f944-1008-4630-99ba-97d04d4425fe" name="Changes" comment="updates">
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/RESTServices/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/Resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOOrder/FeedbackDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOOrder/FeedbackDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOOrder/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOOrder/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOPayment/PaymentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOPayment/PaymentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOPromotion/PromotionRulesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOPromotion/PromotionRulesDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOUsers/ClientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DTOClases/DTOUsers/ClientDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderCancellationHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderCancellationHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderOutcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderOutcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderStatusTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Order/OrderStatusTracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Payment/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Promotions/Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Promotions/Promotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Promotions/PromotionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Promotions/PromotionHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Restaurant/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Restaurant/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/Courier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/RestaurantAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/RestaurantAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/DomainModel/Users/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/PromotionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Implements/PromotionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/FeedbackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/FeedbackRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/MenuItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/MenuItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/OrderItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/OrderItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/PaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/PromotionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/PromotionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/Services/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/SpringBootDomain_FoodDeliveryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodDeliveryApp/src/main/java/org/fooddelivery/SpringBootDomain_FoodDeliveryApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +80,44 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexandra/IdeaProjects/FoodDeliveryApp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.FoodDelivery [clean].executor": "Run",
+    "Maven.FoodDelivery [org.springframework.boot:spring-boot-maven-plugin:3.3.5:run].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SpringBootDomain_FoodDeliveryApp.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Alexandra/IdeaProjects/FoodDeliveryApp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SpringBootDomain_FoodDeliveryApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="FoodDelivery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.fooddelivery.SpringBootDomain_FoodDeliveryApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,7 +136,8 @@
       <updated>1738664141175</updated>
       <workItem from="1738664142258" duration="1755000" />
       <workItem from="1738678076851" duration="8520000" />
-      <workItem from="1738745197428" duration="4526000" />
+      <workItem from="1738745197428" duration="4733000" />
+      <workItem from="1738944929671" duration="9069000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -120,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738749481730</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updates">
+      <option name="closed" value="true" />
+      <created>1738749945408</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738749945408</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +198,7 @@
     <MESSAGE value="Business Services" />
     <MESSAGE value="Business Services 2.0" />
     <MESSAGE value="DTO Classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="DTO Classes" />
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
 </project>

@@ -13,7 +13,7 @@ import java.util.List;
 public interface FeedbackRepository extends JpaRepository<Feedback, Long> {
     @Query("SELECT f FROM Feedback f WHERE f.order.restaurant.restaurantId = :restaurantId")
     List<Feedback> findByRestaurantId(@Param("restaurantId") Long restaurantId);
-    List<Feedback> findByClientClientId(Long clientId);
+    List<Feedback> findByClient_ClientId(Long clientId);
     @Query("SELECT f FROM Feedback f WHERE f.order.courier.courierId = :courierId")
     List<Feedback> findByCourierId(@Param("courierId") Long courierId);
     @Query("SELECT AVG(f.rating) FROM Feedback f WHERE f.order.restaurant.restaurantId = :restaurantId")

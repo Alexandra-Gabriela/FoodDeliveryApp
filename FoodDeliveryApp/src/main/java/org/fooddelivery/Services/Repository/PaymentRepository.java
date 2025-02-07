@@ -14,11 +14,13 @@ import java.util.List;
 @Repository
 public interface PaymentRepository  extends JpaRepository<Payment, Long> {
 
-    List<Payment> findByClientClientId(Long clientId);
+    List<Payment> findByClient_ClientId(Long clientId);
 
-    List<Payment> findByOrderOrderId(Long orderId);
+    List<Payment> findByOrder_OrderId(Long orderId);
 
-    List<Payment> findByStatus(String status);
+    @Query("SELECT p FROM Payment p WHERE p.status = :status")
+    List<Payment> findByStatus(@Param("status") PaymentStatus status);
+
 
     @Query("SELECT SUM(p.amount) FROM Payment p WHERE p.client.clientId = :clientId")
     Double findTotalPaymentsByClient(@Param("clientId") Long clientId);
@@ -42,6 +44,7 @@ public interface PaymentRepository  extends JpaRepository<Payment, Long> {
                                                  @Param("endDate") Date endDate);
 
 
-    @Query("SELECT ph FROM PaymentHistory ph WHERE ph.status = 'Refunded'")
-    List<PaymentHistory> findAllRefundedPayments();
+    @Query("SELECT ph FROM PaymentHistory ph WHERE ph.status = :status")
+    List<PaymentHistory> findAllRefundedPayments(@Param("status") PaymentStatus status);
+
 }

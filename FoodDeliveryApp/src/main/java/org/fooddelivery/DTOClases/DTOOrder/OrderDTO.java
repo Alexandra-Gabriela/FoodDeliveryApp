@@ -4,6 +4,8 @@ import lombok.*;
 import org.fooddelivery.DTOClases.DTOPayment.PaymentDTO;
 import org.fooddelivery.DTOClases.DTOPromotion.PromotionDTO;
 import org.fooddelivery.DTOClases.DTORestaurant.RestaurantDTO;
+import org.fooddelivery.DTOClases.DTOUsers.ClientDTO;
+import org.fooddelivery.DTOClases.DTOUsers.CourierDTO;
 import org.fooddelivery.DomainModel.Order.Status;
 
 import java.util.Date;

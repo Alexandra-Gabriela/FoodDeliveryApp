@@ -1,7 +1,7 @@
 package org.fooddelivery.DomainModel.Promotions;
 import jakarta.persistence.*;
 import lombok.*;
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -19,7 +19,7 @@ public class PromotionHistory {
 
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
-    private Order order;
+    private Orders order;
 
     @ManyToOne
     @JoinColumn(name = "promotion_id", nullable = false)

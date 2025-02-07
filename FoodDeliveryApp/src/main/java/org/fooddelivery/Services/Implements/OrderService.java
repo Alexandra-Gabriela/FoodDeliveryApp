@@ -1,7 +1,7 @@
 package org.fooddelivery.Services.Implements;
 
 
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 import org.fooddelivery.DomainModel.Order.OrderItem;
 import org.fooddelivery.DomainModel.Order.Status;
 import org.fooddelivery.DomainModel.Payment.Payment;
@@ -41,12 +41,12 @@ public class OrderService implements IOrderService {
 
     @Override
     @Transactional
-    public Order createOrder(Long clientId, Long restaurantId, List<OrderItem> items) {
+    public Orders createOrder(Long clientId, Long restaurantId, List<OrderItem> items) {
         Optional<Client> clientOpt = clientRepository.findById(clientId);
         Optional<Restaurant> restaurantOpt = restaurantRepository.findById(restaurantId);
 
         if (clientOpt.isPresent() && restaurantOpt.isPresent()) {
-            Order order = new Order();
+            Orders order = new Orders();
             order.setClient(clientOpt.get());
             order.setRestaurant(restaurantOpt.get());
             order.setStatus(Status.Pending);
@@ -57,7 +57,7 @@ public class OrderService implements IOrderService {
                     .sum();
             order.setTotalPrice(totalAmount);
 
-            Order savedOrder = orderRepository.save(order);
+            Orders savedOrder = orderRepository.save(order);
             items.forEach(item -> {
                 item.setOrder(savedOrder);
                 orderItemRepository.save(item);
@@ -70,11 +70,11 @@ public class OrderService implements IOrderService {
 
     @Override
     @Transactional
-    public Order updateOrderStatus(Long orderId, Status newStatus) {
-        Optional<Order> orderOpt = orderRepository.findById(orderId);
+    public Orders updateOrderStatus(Long orderId, Status newStatus) {
+        Optional<Orders> orderOpt = orderRepository.findById(orderId);
 
         if (orderOpt.isPresent()) {
-            Order order = orderOpt.get();
+            Orders order = orderOpt.get();
             order.setStatus(newStatus);
             return orderRepository.save(order);
         }
@@ -84,10 +84,10 @@ public class OrderService implements IOrderService {
     @Override
     @Transactional
     public boolean cancelOrder(Long orderId, String reason) {
-        Optional<Order> orderOpt = orderRepository.findById(orderId);
+        Optional<Orders> orderOpt = orderRepository.findById(orderId);
 
         if (orderOpt.isPresent()) {
-            Order order = orderOpt.get();
+            Orders order = orderOpt.get();
             if (order.getStatus() == Status.Pending || order.getStatus() == Status.Completed) {
                 order.setStatus(Status.Cancelled);
                 orderRepository.save(order);
@@ -98,27 +98,27 @@ public class OrderService implements IOrderService {
     }
 
     @Override
-    public List<Order> getOrdersByClient(Long clientId) {
-        return orderRepository.findByClientId(clientId);
+    public List<Orders> getOrdersByClient(Long clientId) {
+        return orderRepository.findByClient_ClientId(clientId);
     }
 
     @Override
-    public List<Order> getOrdersByRestaurant(Long restaurantId) {
+    public List<Orders> getOrdersByRestaurant(Long restaurantId) {
         return orderRepository.findByRestaurantRestaurantId(restaurantId);
     }
 
     @Override
-    public List<Order> getActiveOrders() {
+    public List<Orders> getActiveOrders() {
         return orderRepository.findByStatusNot(Status.Completed);
     }
 
     @Override
     @Transactional
     public Payment processPayment(Long orderId, String paymentMethod) {
-        Optional<Order> orderOpt = orderRepository.findById(orderId);
+        Optional<Orders> orderOpt = orderRepository.findById(orderId);
 
         if (orderOpt.isPresent()) {
-            Order order = orderOpt.get();
+            Orders order = orderOpt.get();
 
             if (order.getStatus() != Status.Pending) {
                 throw new IllegalStateException("Payment can only be processed for pending orders.");

@@ -16,5 +16,7 @@ public class RestaurantAdmin {
     @JoinColumn(name = "restaurant_id", nullable = false)
     private Restaurant restaurant;
 
-
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    private Users user;
 }

@@ -1,6 +1,7 @@
 package org.fooddelivery.DTOClases.DTOOrder;
 
 import lombok.*;
+import org.fooddelivery.DTOClases.DTOUsers.ClientDTO;
 import org.fooddelivery.DomainModel.Order.FeedbackType;
 
 import java.util.Date;

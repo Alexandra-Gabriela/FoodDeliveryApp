@@ -1,6 +1,6 @@
 package org.fooddelivery.Services.Implements;
 
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 import org.fooddelivery.DomainModel.Payment.Payment;
 import org.fooddelivery.DomainModel.Payment.PaymentHistory;
 import org.fooddelivery.DomainModel.Payment.PaymentStatus;
@@ -34,7 +34,7 @@ public class PaymentService implements IPaymentService {
         Client client = clientRepository.findById(clientId)
                 .orElseThrow(() -> new RuntimeException("Client not found"));
 
-        Order order = orderRepository.findById(orderId)
+        Orders order = orderRepository.findById(orderId)
                 .orElseThrow(() -> new RuntimeException("Order not found"));
 
         Payment payment = new Payment();

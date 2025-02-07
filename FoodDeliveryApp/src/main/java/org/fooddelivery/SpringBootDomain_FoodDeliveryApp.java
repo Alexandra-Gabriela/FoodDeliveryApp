@@ -1,14 +1,16 @@
 package org.fooddelivery;
 
+
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
+
 import java.util.logging.Logger;
 
-@SpringBootConfiguration
+@SpringBootApplication
 public class SpringBootDomain_FoodDeliveryApp extends SpringBootServletInitializer {
     private static Logger logger = Logger.getLogger(SpringBootDomain_FoodDeliveryApp.class.getName());
 

@@ -1,6 +1,8 @@
 package org.fooddelivery.DTOClases.DTOPromotion;
 
 import lombok.*;
+import org.fooddelivery.DTOClases.DTORestaurant.MenuItemDTO;
+import org.fooddelivery.DTOClases.DTORestaurant.RestaurantDTO;
 
 import java.math.BigDecimal;
 

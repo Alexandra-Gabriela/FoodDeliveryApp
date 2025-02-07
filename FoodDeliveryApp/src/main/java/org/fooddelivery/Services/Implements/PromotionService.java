@@ -46,7 +46,7 @@ public class PromotionService implements IPromotionService {
         return promotionRepository.findById(promotionId).map(existingPromotion -> {
             existingPromotion.setPromoType(updatedPromotion.getPromoType());
             existingPromotion.setDiscountPercentage(updatedPromotion.getDiscountPercentage());
-            existingPromotion.setStartDate(updatedPromotion.getStartDate());
+            //existingPromotion.setStartDate(updatedPromotion.getStartDate());
             existingPromotion.setExpiryDate(updatedPromotion.getExpiryDate());
             existingPromotion.setDescription(updatedPromotion.getDescription());
             existingPromotion.setIsActive(updatedPromotion.getIsActive());

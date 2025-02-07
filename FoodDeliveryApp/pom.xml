@@ -14,10 +14,10 @@
 
         <ojdbc10.version>19.3.0.0</ojdbc10.version>
         <postgresql.jdbc.version>42.2.24</postgresql.jdbc.version>
-        <maven.compiler.source>21</maven.compiler.source>
+      <!--  <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tomcat7-maven-plugin.version>2.1</tomcat7-maven-plugin.version>
+        <tomcat7-maven-plugin.version>2.1</tomcat7-maven-plugin.version> -->
     </properties>
     <packaging>${packaging-type}</packaging>
     <parent>
@@ -71,7 +71,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <!-- <version>${postgresql.jdbc.version}</version>  -->
+           <version>${postgresql.jdbc.version}</version>
         </dependency>
 
         <dependency>
@@ -175,7 +175,7 @@
                     <plugin>
                         <groupId>org.apache.tomcat.maven</groupId>
                         <artifactId>tomcat7-maven-plugin</artifactId>
-                        <version>${tomcat7-maven-plugin.version}</version>
+                        <version>2.2</version>
                         <configuration>
                             <url>http://localhost:8083/manager/text</url>
                             <path>/team/data</path>

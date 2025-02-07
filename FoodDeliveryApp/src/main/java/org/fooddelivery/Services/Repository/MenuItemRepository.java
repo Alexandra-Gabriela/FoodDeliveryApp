@@ -12,6 +12,7 @@ import java.util.List;
 
 @Repository
 public interface MenuItemRepository extends JpaRepository<MenuItem, Long> {
+
     @Query("SELECT m FROM MenuItem m WHERE m.restaurant.restaurantId = :restaurantId AND m.available = true")
     List<MenuItem> findAvailableMenuItemsByRestaurant(@Param("restaurantId") Long restaurantId);
 

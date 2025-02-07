@@ -11,8 +11,9 @@ import java.util.List;
 
 @Repository
 public interface OrderItemRepository extends JpaRepository<OrderItem, Integer> {
-    List<OrderItem> findByOrderOrderId(Long orderId);
-    List<OrderItem> findByMenuItemMenuItemId(Long menuItemId);
+    List<OrderItem> findByMenuItem_ItemId(Long itemId);
+    List<OrderItem> findByOrder_OrderId(Long orderId);
+
 
     @Query("SELECT oi.menuItem.itemId, COUNT(oi) AS timesOrdered " +
             "FROM OrderItem oi " +

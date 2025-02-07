@@ -22,7 +22,8 @@ public interface PromotionRepository extends JpaRepository<Promotion, Long> {
     @Query("SELECT p FROM Promotion p WHERE p.expiryDate <= CURRENT_DATE")
     List<Promotion> findExpiredPromotions();
 
-    List<Promotion> findByPromoType(String promoType);
+    @Query("SELECT p FROM Promotion p WHERE p.promoType = :promoType")
+    List<Promotion> findByPromoType(@Param("promoType") RuleType promoType);
 
     @Query("SELECT p FROM Promotion p WHERE p.discountPercentage >= :minDiscount")
     List<Promotion> findByMinDiscount(@Param("minDiscount") Double minDiscount);

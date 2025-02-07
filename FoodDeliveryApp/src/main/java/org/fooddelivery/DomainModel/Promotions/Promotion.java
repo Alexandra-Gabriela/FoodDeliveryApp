@@ -1,7 +1,7 @@
 package org.fooddelivery.DomainModel.Promotions;
 import jakarta.persistence.*;
 import lombok.*;
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 import org.fooddelivery.DomainModel.Users.ClientPromotionHistory;
 
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class Promotion {
 
 
     @OneToMany(mappedBy = "promotion", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Order> orders = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     @OneToMany(mappedBy = "promotion", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<PromotionRules> promotionRules = new ArrayList<>();

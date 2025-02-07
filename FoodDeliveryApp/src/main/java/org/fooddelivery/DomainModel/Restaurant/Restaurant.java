@@ -2,7 +2,7 @@ package org.fooddelivery.DomainModel.Restaurant;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 import org.fooddelivery.DomainModel.Promotions.PromotionRules;
 import org.fooddelivery.DomainModel.Users.RestaurantAdmin;
 
@@ -27,7 +27,7 @@ public class Restaurant {
     private Date createdAt;
 
     @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Order> orders = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<RestaurantAdmin> admins = new ArrayList<>();

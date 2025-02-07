@@ -1,7 +1,7 @@
 package org.fooddelivery.DomainModel.Users;
 import jakarta.persistence.*;
 import lombok.*;
-import org.fooddelivery.DomainModel.Order.Order;
+import org.fooddelivery.DomainModel.Order.Orders;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +17,9 @@ public class Courier {
     private String vehicleType;
 
     @OneToMany(mappedBy = "courier", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Order> orders = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private Users user;
 }

@@ -23,5 +23,5 @@ public class OrderOutcome {
 
     @OneToOne
     @JoinColumn(name = "order_id", nullable = false)
-    private Order order;
+    private Orders order;
 }
